@@ -33,19 +33,13 @@
                 <td>Completed</td>
                 <td>
                     <a href="#" class="btn btn-warning btn-xs"><i class="fa fa-edit"></i> edit</a>
-                    <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-times"></i> delete</a>
+                    <a href="/post/delete/{{$item->id}}" class="btn btn-danger btn-xs"><i class="fa fa-times"></i> delete</a>
                 </td>
             </tr>
         </tbody>
     </table>
 </div>
-<ul class="pagination">
-    <li><a href="#">1</a></li>
-    <li class="active"><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-</ul>
+{{posts->links()}}
         <hr>
         <p>&copy; 2020 Pawarisa Chotiphakhun</p>
     </div>
